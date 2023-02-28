@@ -1,0 +1,81 @@
+.offer {
+    padding: 40px 0;
+    background-color: $color_1;
+    color: $color_5;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        color: $color_3;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -15px;
+    }
+
+    &__item {
+        width: 255px;
+        height: 363px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: $color_5;
+        margin: 0 15px 30px 15px;
+    }
+
+    &__image {
+        width: 125px;
+    }
+
+    &__description {
+        line-height: 20px;
+        color: $color_3;
+        text-align: center;
+    }
+
+    &__price {
+        font-size: 21px;
+        font-weight: 500;
+        color: $color_3;
+        letter-spacing: 0.05em;
+    }
+
+    &__button {
+        width: 130px;
+        height: 35px;   
+        letter-spacing: 0.05em;
+        background-color: $color_2;
+        transition: .3s;
+
+        &:hover {
+            background-color: transparent;
+            color: $color_6;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .offer {
+
+        &__title {
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+    
+        &__header {
+            flex-direction: column;
+        }
+    }
+}

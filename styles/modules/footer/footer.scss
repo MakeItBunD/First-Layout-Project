@@ -1,0 +1,41 @@
+.footer {
+    height: 64px;
+    background-color: $color_1;
+
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__policy {
+        display: inline;
+        font-size: 12px;
+        color: $color_3;
+        line-height: 14px;
+
+        &:first-child {
+            margin: 0 20px 0 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        height: auto;
+        padding: 10px 0;
+    
+        &__content {
+            flex-direction: column;
+        }
+    
+        &__policy {
+            text-align: center;
+
+            &:first-child {
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.location {
+    height: 120px;
+
+    &__content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__icon {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $color_2;
+        border-radius: 50%;
+        margin: 0 20px 0 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__office {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    &__number {
+        font-size: 16px;
+        margin: 0 40px 0 0;
+    }
+
+    &__button {
+        width: 170px;
+        height: 40px;
+        transition: .3s;
+
+        &:hover {
+            background-color: $color_2;
+            color: $color_5;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .location {
+        height: auto;
+        padding: 20px 0;
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__links {
+            margin: 0 0 20px 0;
+        }
+
+        &__office {
+            flex: none;
+            margin: 0 0 20px 0;
+        }
+    
+        &__number {
+            margin: 0 0 20px 0;
+        }
+    }
+}
+

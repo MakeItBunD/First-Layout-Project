@@ -1,0 +1,70 @@
+.feedback {
+    height: 120px;
+    border-bottom: 1px solid $color_1;
+
+    &__description {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo {
+        margin: 0 20px 0 0;
+    }
+
+    &__title {
+        flex: 1 1 auto;
+        color: $color_2;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        cursor: default;
+    }
+
+    &__number {
+        margin: 0 40px 0 0;
+        font-size: 16px;
+    }
+
+    &__button {
+        width: 170px;
+        height: 40px;
+        transition: .3s;
+
+        &:hover {
+            background-color: $color_2;
+            color: $color_5;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .feedback {
+        height: auto;
+        padding: 20px 0;
+    
+        &__description {
+            flex-direction: column;
+        }
+    
+        &__logo {
+            margin: 0 0 20px 0;
+        }
+    
+        &__title {
+            flex: none;
+            font-size: 56px;
+            margin: 0 0 20px 0;
+        }
+    
+        &__number {
+            margin: 0 0 20px 0;
+        }
+    
+        &__button {
+            width: 250px;
+            height: 50px;
+        }
+    }
+}
